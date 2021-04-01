@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OutlayComponent } from './outlay/outlay.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

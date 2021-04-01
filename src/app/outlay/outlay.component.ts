@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Repository} from '../repository';
+import {ReposService} from '../repos-service/repos.service'
 
 @Component({
   selector: 'app-outlay',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OutlayComponent implements OnInit {
 
-  constructor() { }
+  repos: Repository[];
+
+  constructor(reposService: ReposService) {
+    this.repos = reposService.getRepository()
+   }
 
   ngOnInit(): void {
   }
