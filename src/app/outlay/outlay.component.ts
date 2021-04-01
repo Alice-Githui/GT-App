@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Repository} from '../repository';
 import {ReposService} from '../repos-service/repos.service'
+import {User} from '../user'
+import {UsersService} from '../user-service/users.service'
 
 @Component({
   selector: 'app-outlay',
@@ -10,9 +12,11 @@ import {ReposService} from '../repos-service/repos.service'
 export class OutlayComponent implements OnInit {
 
   repos: Repository[];
+  users: User[]
 
-  constructor(reposService: ReposService) {
-    this.repos = reposService.getRepository()
+  constructor(reposService: ReposService, usersService:UsersService) {
+    this.repos = reposService.getRepository(),
+    this.users = usersService.getUsers()
    }
 
   ngOnInit(): void {

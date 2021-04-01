@@ -6,6 +6,16 @@
             <div class = "my-username">
                 <p>GitHub Name: Alice-Githui</p>
                 <img src = "../../assets/Images/mygitbubimage.jpeg" alt = "">
+                <ul>
+                    <div *ngFor = 'let user of users'>
+                        <li>
+                            <h4>{{user.uname | uppercase}}
+                                <br>
+                                {{user.udescription | uppercase}}
+                            </h4>
+                        </li>
+                    </div>
+                </ul>
             </div>
            </div>
            <div class = "col-md-7">
