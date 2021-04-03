@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService} from '../user-service/service.service'
+import {User} from '../user'
+import {Repos} from '../repository/repos'
 
 @Component({
   selector: 'app-homepage',
@@ -6,10 +9,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  username: string;
+  user: User
+  repository: Repos
 
-  constructor() { }
+  constructor(public serviceService: ServiceService) { }
 
-  ngOnInit(): void {
+  getUser(){
+    this.serviceService.getProfile()
+      this.username = this.serviceService.username;
+
+    }
+
+  ngOnInit(){
+    this.serviceService.getProfile()
+  
   }
-
 }
+
+  
+

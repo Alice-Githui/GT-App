@@ -2,3 +2,7 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 
+*{
+    box-sizing: border-box;
+}
+
