@@ -12,15 +12,13 @@ import {HttpClient} from '@angular/common/http'
 export class HomepageComponent implements OnInit {
   username: string;
   user: User[]
-  repository: Repos
+  repository: Repos[]
 
   constructor(public serviceService: ServiceService, private http: HttpClient) { }
 
-  onSearch(username){
+  getUser(username: string){
     this.serviceService.getProfile(username).subscribe((data)=>{
       this.username = this.serviceService.username
-
-      console.log(this.username)
       
 
     })

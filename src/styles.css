@@ -5,4 +5,11 @@
 *{
     box-sizing: border-box;
 }
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+
+}
 

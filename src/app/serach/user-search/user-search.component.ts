@@ -22,7 +22,10 @@ export class UserSearchComponent implements OnInit {
   getUser(){
     pluck('target', 'value'),
     map((value)=>value);
+
     }
+
+    
 
   ngOnInit(){
   }
