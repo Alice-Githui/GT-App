@@ -9,6 +9,9 @@ export const environment = {
 
 };
 
+//Client ID  - c85efc812cd9ed68d637
+//Client-secret -  01f2bb3d1c4b0ad360d1e34b7b04785cd365c567
+
 //acessToken:  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
 
 //API KEY:  "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"

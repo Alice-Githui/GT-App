@@ -2,15 +2,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {FormsModule} from '@angular/forms'
 import {HttpClientModule} from '@angular/common/http'
-import { OutlayComponent } from './outlay/outlay.component';
+import {HomepageComponent} from './homepage/homepage.component'
 
-const routes: Routes = [];
+
+const routes: Routes = [
+  {path: 'home', component: HomepageComponent},
+  {path: '**', component: HomepageComponent}
+];
 
 @NgModule({
   imports: 
   [RouterModule.forRoot(routes),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
 
   ],
   exports: [RouterModule]
