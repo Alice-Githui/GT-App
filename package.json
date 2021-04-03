@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~11.2.5",
     "@angular/platform-browser-dynamic": "~11.2.5",
     "@angular/router": "~11.2.5",
+    "angular-oauth2-oidc": "^10.0.3",
     "bootstrap": "^4.6.0",
     "popper": "^1.0.1",
     "rxjs": "~6.6.0",

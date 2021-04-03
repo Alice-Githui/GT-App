@@ -4,12 +4,15 @@
 
 export const environment = {
   production: false,
-  APIKey:  "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"
+  accessToken:  "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",
+  ApiKey: 'https://api.github.com/users/Alice-Githui?=',
 
 };
 
+//acessToken:  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
+
 //API KEY:  "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"
-//API KEY URL: 'https://api.github.com/users/daneden?access_token=' + apiKey
+//APIKEYURL: 'https://api.github.com/users/daneden?access_token=' "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"
 
 /*
  * For easier debugging in development mode, you can import the following file
