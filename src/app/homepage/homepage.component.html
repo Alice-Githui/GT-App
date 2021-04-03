@@ -1,17 +1,8 @@
 <app-navbar></app-navbar>
 
 <div class = "container-fluid">
-    <div class="form-field">
-        <form>
-            <div class="form-group">
-                <label for ="user-name">Enter Your GitHub UserName</label>
-                <input type = "text" id="user-name" class="form-control"> 
-            </div>
-            <button type="submit" (click) = 'getUser()'>Submit</button>
 
-        </form>
-
-    </div>
+    <app-user-search (click)= 'onSearch($event)'></app-user-search>
 
     <br>
     <div class="image">
