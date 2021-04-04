@@ -1,0 +1,17 @@
+.row{
+    margin: 30px;
+}
+
+.card{
+    padding: 5px;
+}
+form button{
+    background-color: aqua;
+}
+form{
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+}

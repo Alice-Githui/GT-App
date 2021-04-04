@@ -1,4 +1,11 @@
 img{
     border-radius: 50%;
-    width: 300px;
+    width: 500px;
+}
+
+.personal-details{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
 }
