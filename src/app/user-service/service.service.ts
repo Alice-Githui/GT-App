@@ -4,7 +4,6 @@ import {environment} from '../../environments/environment'
 import {User} from '../user'
 import {Repos} from '../repository/repos'
 import { Observable } from 'rxjs';
-import {map} from 'rxjs/operators'
 
 @Injectable({
   providedIn: 'root'
@@ -14,20 +13,12 @@ export class ServiceService {
   user: User
   repository: Repos
 
+  constructor(private http: HttpClient) { }
 
 
-  constructor(private http: HttpClient) { 
-    this.user = new User('', '', 0, '', '', '', 0, 0, new Date())
-
-
-  }
-  
-
-  getProfile(username):Observable<any>{
-      return this.http.get(`https://api.github.com/users/${this.username}?access_token?client_id= ${environment.accessToken}`)
-      .pipe(
-        map((response: any) => response.items)
-      );
+  getProfile(){
+    // return this.http.get('https://api.github.com/users')
+      return this.http.get(`https://api.github.com/users/Alice-Githui?access_token?client_id= ${environment.accessToken}`)
       }
         
   

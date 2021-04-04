@@ -2,7 +2,17 @@
 
 <div class = "container-fluid">
 
-    <app-user-search (click) = 'getUser($event)'></app-user-search>
+    <div class="form-field">
+        <form>
+            <div class="form-group">
+                <label for ="user-name">Enter Your GitHub UserName:</label>
+                <input #input type = "search" id="user-name" class="form-control" #search> 
+            </div>
+            <button type="submit" class="btn btn-info">Submit</button>
+    
+        </form>
+    
+    </div>
     <hr>
     <div class="image">
         <img src ="../../assets/Images/mygitbubimage.jpeg" alt="image of an open laptop with code showing on its screen">
@@ -14,15 +24,18 @@
         <p>Description: Student</p>
 
     </div>
-    <ul>
-        <div *ngFor = 'let user of user'>
-            <li>
-                {{user.login}}
-                {{user.id}}
-            </li>
+    <!-- <div class="list">
+        <ul>
+            <div *ngFor = 'let user of data'>
+                <li>
+                    {{user.id}}.{{user.login}}
+                </li>
+            </div>
+        </ul>    
 
-        </div>
-    </ul>    
-    <app-footer></app-footer>
+
+    </div> -->
+    
 
 </div>
+<app-footer></app-footer>
