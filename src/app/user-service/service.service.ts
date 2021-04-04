@@ -23,7 +23,7 @@ export class ServiceService {
   }
   
 
-  getProfile(inputValue):Observable<any>{
+  getProfile(username):Observable<any>{
       return this.http.get(`https://api.github.com/users/${this.username}?access_token?client_id= ${environment.accessToken}`)
       .pipe(
         map((response: any) => response.items)
