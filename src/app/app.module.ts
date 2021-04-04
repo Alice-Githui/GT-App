@@ -8,6 +8,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserSearchComponent } from './serach/user-search/user-search.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     NavbarComponent,
     UserSearchComponent,
     RepositoriesComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
