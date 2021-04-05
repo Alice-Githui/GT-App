@@ -22,6 +22,7 @@ export class HomepageComponent implements OnInit {
       this.data = data
 
       console.log(this.data)
+
     })
 
     
